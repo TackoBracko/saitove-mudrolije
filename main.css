@@ -1,0 +1,103 @@
+*{
+    box-sizing:border-box;
+}
+
+html, body{
+    height:100%;
+    display: grid;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color:darkgreen;
+    color:white;
+    font-family: sans-serif;
+}
+
+.allThisSait {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 30px;
+    margin-top: 50px;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.fade-in-text {
+    animation-duration: 1s;
+    animation-name: scale;
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+.quote-place {
+    color:white;
+    text-align: center;
+    font-size: 50px;
+}
+
+.footer-line {
+    font-size: 20px;
+    text-align: center;
+}
+
+.dev-by {
+    color:hotpink;
+    text-decoration: none;
+}
+
+@media (max-width:1200px ) and (min-width:400px ) {
+    body,
+    .allThisSait,
+    h1,
+    section,
+    .quote-place,
+    .footer-line {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width:400px ) {
+    body,
+    .allThisSait,
+    h1,
+    section,
+    .quote-place,
+    .footer-line {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .quote-place {
+        font-size: 25px;
+    }
+
+    .footer-line{
+        font-size: 15px;
+    }
+}
